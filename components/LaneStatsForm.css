@@ -1,0 +1,115 @@
+﻿
+
+    /* styles/LaneStatsForm.css */
+
+.lane-stats-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Add some spacing between form elements */
+    width: fit-content; /* Adjust width as needed */
+    margin: 0 auto; /* Center the form horizontally */
+}
+
+.lane-stats-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.lane-stats-form input,
+.lane-stats-form select,
+.lane-stats-form button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%; /* Make form elements fill available width */
+}
+
+.lane-stats-form div button {
+
+    width: 45%; 
+    margin: 2%;
+  
+}
+
+.lane-stats-form button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.lane-stats-form button[type="submit"]:hover {
+    background-color: #0069d9;
+}
+.lane-stats-form a {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10%;
+    border-color: black;
+    border-width: 1px;
+    padding: 5px;
+}
+.ReactTags__selected
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    flex-grow: 1;
+   
+}
+.tag-wrapper button{
+    display: inline-flex;
+    
+}
+.tag-wrapper span{
+   display: inline-flex;
+    ;
+
+}
+.tag-wrapper
+{
+    /*todo which is better?*/
+    display: inline-flex;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    
+    
+   
+    padding: 5px;
+    border-width: 2px;
+    border-color: grey;
+    border-radius: 5px;
+}
+.lane-stats-form div button
+{
+    width: auto;
+    text-align: center;
+   
+}
+
+.lane-stats-form a:hover {
+    background-color: #0069d9;
+}
+
+.lane-stats-form .exclude-lanes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.lane-stats-form .exclude-lanes input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+/*todo learn from here https://www.npmjs.com/package/react-tag-input */
+.tags
+{
+    width: 100%;
+}
+table {
+    width: 5000px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+}
