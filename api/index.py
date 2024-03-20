@@ -465,6 +465,10 @@ def handle_card_request(card_id):
         print("card Fail")
         return jsonify({'error': str(e)}), 500
     
+@app.route('/api/health', methods=['GET'])
+def handle_health_request():    
+    return 'Web App with Python Flask!'
+ 
 @app.route('/api/lk', methods=['GET'])
 def handle_request():
     """Handles API requests with 'api_key' and 'id' parameters."""
