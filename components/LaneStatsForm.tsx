@@ -199,7 +199,7 @@ function LaneStatsForm({onSubmit, initialAPIKey, initialLaneId}: LaneStatsFormPa
             <br/>
 
             <button type="submit">{"Generate Chart (WIP)"}</button>
-            <a href={buildURL(formData, true)} download="data.csv"> Download As C.S.V</a>
+            <a href={buildURL(formData, true)} download="data.csv"  rel="noopener noreferrer" target="_blank"> Download As C.S.V</a>
             <br/><br/><br/>
         </form>
     );

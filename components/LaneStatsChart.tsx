@@ -22,7 +22,7 @@ function LaneStatsChart({ data }: { data: ILaneStats[] }) {
   const chartRef = useRef<Chart | null>(null);
 
  
-  let chart = undefined; 
+ 
   // Use Chart.js library to render the chart after component mounts
   useEffect(() => {
 
@@ -62,7 +62,7 @@ function LaneStatsChart({ data }: { data: ILaneStats[] }) {
       datasets: [
         {
           label: 'Days (Excl. Blocked, Wknds, Holidays)',
-          data: daysData,
+          data: [1,1,1,1,1,1,1,1,15,15,1515,15,151,15],
           backgroundColor: 'rgba(255, 99, 132, 0.2)',
           borderColor: 'rgba(255, 99, 132, 1)',
           borderWidth: 1,

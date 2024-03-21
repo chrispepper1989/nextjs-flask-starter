@@ -69,6 +69,10 @@
     ;
 
 }
+    tr
+    {
+        text-align: center;
+    }
 .tag-wrapper
 {
     /*todo which is better?*/
